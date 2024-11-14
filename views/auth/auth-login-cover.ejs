@@ -72,14 +72,14 @@
             <h3 class="mb-1 fw-bold">Bem Vindo A DExpress! 👋</h3>
             <p class="mb-4">Por favor, faça login na sua conta</p>
 
-            <form id="formAuthentication" class="mb-3" action="#" method="POST">
+            <form id="formAuthentication" class="mb-3" action="/signIn" method="POST">
               <div class="mb-3">
                 <label for="email" class="form-label">Email or Username</label>
                 <input
                   type="text"
                   class="form-control"
                   id="email"
-                  name="email-username"
+                  name="username"
                   placeholder="Enter your email or username"
                   autofocus />
               </div>
@@ -107,7 +107,7 @@
                   <label class="form-check-label" for="remember-me"> Remember Me </label>
                 </div>
               </div>
-              <button class="btn btn-primary d-grid w-100">Iniciar Sessão</button>
+              <button type="submit" class="btn btn-primary d-grid w-100">Iniciar Sessão</button>
             </form>
   <!--
             <p class="text-center">
@@ -143,5 +143,6 @@
 
     <!-- / Content -->
     <%- include("../partials/public/footer.ejs") %>
+    <%- include('../alerts/alerts') %>
   </body>
 </html>
